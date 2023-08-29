@@ -1,0 +1,26 @@
+Context.add_conversation(:transcribe)
+Context.add_conversation(:draft)
+Context.add_conversation(:final)
+
+full_story = input()
+
+chunks = Local.split_into_chunks(full_story)
+
+story_names = ai_object_extract(:draft, "draft/01_get_character_names", :json, human_input: true)
+
+ai_prompt(:transcribe, "transcribe/02_train_transcribe")
+
+ingame_text_queue = "none"
+foreach(chunks, fn {chunk,i} ->
+  transcription =
+    chunk
+    |> ai_prompt(:transcribe, "transcribe/03_transcribe")
+
+  ingame_text_queue = Local.gather_ingame_text(ingame_text_queue, transcription)
+  if ingame_text_queue.ready do
+    text = ingame_text_queue.text
+    text
+    |> ai_pipethru(:draft, "draft/04_write_draft")
+    |> ai_pipethru(:final, "final/05_write_final", optional_human_input: true)
+  end
+end)

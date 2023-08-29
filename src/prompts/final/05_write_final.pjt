@@ -1,0 +1,19 @@
+Here is part of a story I am writing based on a D&D game I had transcribed and summarized by AI.  I am trying to make it as readable as possible, but I am not sure if I am doing a good job.
+
+This is what the AI came up with for this next part of the story:
+
+{{ input }}
+
+As a reminder, these are the characters, places and concept names:
+
+{{ story_names }}
+
+{% if human_input %}
+
+I would like you edit this story, for consistency.  Specifically, I want you to follow this feedback closely:
+
+{{ human_input }}
+
+{% endif %}
+
+Now please edit and revise the above part of the story, following the feedback I've given here.

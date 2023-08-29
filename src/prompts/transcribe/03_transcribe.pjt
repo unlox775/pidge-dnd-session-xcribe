@@ -1,0 +1,15 @@
+As a reminder, these are the characters, places and concept names:
+{{ story_names }}
+
+To classify each line add a "PREFIX: " to the start of each line, as one of these:
+- OUTGAME/{PERSON NAME} - something asking questions about how D&D works, or not even related
+- GAMEMECH/{PERSON NAME} - something with D&D game mechanics discussion like rolling dice, discussing how many hits points a guy has, or what kind of modifier or weapons someone has
+- NARRATIVE/{PERSON NAME} - Something in the game describing what a character looks, like what they are doing (but not what they are saying)
+- DIALOGUE/{PERSON NAME} - what a game character is actually saying in character.  
+- BACKGROUND/{PERSON NAME} - discussing the background of a character, his alignment, or explaining something about the current world setting that the characters or DM should know
+
+If you can't guess at the name, just use UNKNOWN as the person name.  Guesses are OK though.
+
+===========================
+
+{{ input }}

@@ -1,0 +1,12 @@
+This is a listing of my character and story names from a Dungeons and Dragons session I will have you help transcribe for me.  This is a list of the character, place names, etc with a short description of each.
+
+{{ human_input }}
+
+I woudld like you to capture the names and descriptions and put them as name/value pairs into a JSON object like this:
+
+{
+    "Eddlsworth HAndley": "A human fighter who is a member of the Handley family",
+    "Jim": "a small elf, with a big heart",
+    "Chartleton": "the name for the family estate",
+    "Tripschancey": "the family's special brand of magic they sell to the public"
+}
