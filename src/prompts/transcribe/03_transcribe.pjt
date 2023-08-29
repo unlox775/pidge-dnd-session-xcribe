@@ -1,5 +1,5 @@
 As a reminder, these are the characters, places and concept names:
-{{ story_names }}
+{{ json.story_names }}
 
 To classify each line add a "PREFIX: " to the start of each line, as one of these:
 - OUTGAME/{PERSON NAME} - something asking questions about how D&D works, or not even related

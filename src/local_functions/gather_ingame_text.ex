@@ -1,3 +1,5 @@
+@limit_words 700
+
 def function(ingame_text_queue, transcription) do
   transcription_line = ~r/^\W+(GAMEMECH|NARRATIVE|DIALOGUE|BACKGROUND)/i
 
@@ -8,7 +10,7 @@ def function(ingame_text_queue, transcription) do
     # remove all lines that match the transcription line regex
     |> Enum.filter(fn line -> Regex.match?(transcription_line, line) end)
     # Trim all nonword characters from the beginning of each line
-    |> Enum.map(fn line -> Regex.replace(~r/^\W+/, line, "") end)
+    |> Enum.map(fn line -> Regex.replace(~r/^\W+/, line, "")<>"\n" end)
 
   queue =
     case ingame_text_queue do
@@ -17,9 +19,24 @@ def function(ingame_text_queue, transcription) do
     end
 
   cond do
-    Enum.count(queue ++ scrubbed_transcription) > 60 ->
-      %{"queue" => [], "text" => [queue ++ scrubbed_transcription] |> Enum.join("\n"), "ready" => true}
+    num_words(queue ++ scrubbed_transcription) > @limit_words ->
+      text_body =
+        [queue ++ scrubbed_transcription]
+        |> IO.inspect(label: "text_body PREJOIN")
+        |> Enum.join("\n")
+        |> IO.inspect(label: "text_body")
+
+      %{
+        "queue" => [],
+        "text" => text_body,
+        "ready" => true
+      }
     true ->
       %{"queue" => queue ++ scrubbed_transcription, "text" => nil, "ready" => false}
   end
 end
+
+defp num_words([_|_] = list), do:
+  list |> List.flatten() |> Enum.join("\n") |> num_words()
+defp num_words(text), do:
+  text |> String.split(~r/[^\w\']+/) |> Enum.count

@@ -2,7 +2,9 @@ Here is part of a story I am writing based on a D&D game I had transcribed and s
 
 This is what the AI came up with for this next part of the story:
 
+=====================
 {{ input }}
+=====================
 
 As a reminder, these are the characters, places and concept names:
 
@@ -14,6 +16,10 @@ I would like you edit this story, for consistency.  Specifically, I want you to 
 
 {{ human_input }}
 
+{% else %}
+
+I would like you to keep all the general content, and dialoge.  Just revise and improve any parts you feel didn't make sense, and correct if any character names or places are wrong.
+
 {% endif %}
 
-Now please edit and revise the above part of the story, following the feedback I've given here.
+Now please edit and revise the above part of the story, following the feedback I've given here.  Please include the entire content, as I will be copy pasting your response as the text for the next part of the story.  Any parts you leave out may end up being lost.

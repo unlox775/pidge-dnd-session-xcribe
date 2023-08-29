@@ -1,5 +1,5 @@
 def function (full_story) do
-  manual_wrap = ~r/([\w,]) *\n([a-z])/
+  manual_wrap = ~r/([\w,]) *\n(\w)/
 
   # first in the whole text, unwrap lines
   Regex.replace(manual_wrap, full_story, "\\1 \\2")

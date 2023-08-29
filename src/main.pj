@@ -22,5 +22,7 @@ foreach(chunks, fn {chunk,i} ->
     text
     |> ai_pipethru(:draft, "draft/04_write_draft")
     |> ai_pipethru(:final, "final/05_write_final", optional_human_input: true)
+
+    story_names = ai_object_extract(:final, "final/06_update_story_names", :json, optional_human_input: true)
   end
 end)
