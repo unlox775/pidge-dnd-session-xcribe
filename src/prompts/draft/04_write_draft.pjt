@@ -10,10 +10,16 @@ And here are the rules:
 As a reminder, these are the characters, places and concept names:
 {{ json.story_names }}
 
-Ok, please continue telling the next part of the story.  Below is the next part of a transcription of a D&D game session.  You are spinnig it into a more cohesive story.  I will paste you the next section of the transcript, and I would like you to just continue from where you left off on your last message, spinning the new section into a good story.
+Ok, please continue telling the next part of the story.  Below is the next part of a transcription of a D&D game session.  You are spinning it into a more cohesive story.  I will paste you the next section of the transcript, and I would like you to just continue from where you left off on your last message, spinning the new section into a good story.
 
 Please try to get as much of the dialogue mentioned from the session into the story narrative as close to verbatim as possible.  The reason we are making this is so the characters can read it and remember what happened in the game, so it is important to get the dialogue right.  Fixing the grammar and spelling is fine, but please try to keep the dialogue as close to the original as possible.
 
-======================
+Please try to guess at names of who said things.  Try to avoid "one of the adventurers said...", but pick a person that makes sense.
+
+All the NARRATIVE, GAMEMECH, and BACKGROUND, are items you never explicitly quote or mention, just work them in as information that part of the story should communicate.  There should not be any D&D terms here like rolling for perception, etc.
+
+------------------------
 
 {{ input }}
+
+------------------------

@@ -2,19 +2,19 @@ Here is part of a story I am writing based on a D&D game I had transcribed and s
 
 This is what the AI came up with for this next part of the story:
 
-=====================
+------------------------
 {{ input }}
-=====================
+------------------------
 
 As a reminder, these are the characters, places and concept names:
 
 {{ story_names }}
 
-{% if human_input %}
+{% if human_input != "-" %}
 
 I would like you edit this story, for consistency.  Specifically, I want you to follow this feedback closely:
 
-{{ human_input && human_input != "-" }}
+{{ human_input }}
 
 {% else %}
 
