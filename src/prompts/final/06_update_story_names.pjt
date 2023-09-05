@@ -4,7 +4,7 @@ Okay, comma, that was great, exclamation point. If you could please now update m
 
 Now, based off of the last section of the story we just did and my feedback, can you please add things or update things in this JSON to reflect the current state of a useful set of the names and spellings that we want to keep consistent going forward. Please output the new JSON.
 
-{% if human_input %}
+{% if human_input && human_input != "-" %}
 
 Specifically, I want you to follow this feedback closely:
 

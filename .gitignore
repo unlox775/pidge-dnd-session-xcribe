@@ -1,2 +1,4 @@
 release
 .vscode
+.DS_Store
+erl_crash.dump

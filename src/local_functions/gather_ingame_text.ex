@@ -1,7 +1,7 @@
 @limit_words 700
 
 def function(ingame_text_queue, transcription) do
-  transcription_line = ~r/^\W+(GAMEMECH|NARRATIVE|DIALOGUE|BACKGROUND)/i
+  transcription_line = ~r/^\W*(GAMEMECH|NARRATIVE|DIALOGUE|BACKGROUND)/i
 
   scrubbed_transcription =
     transcription
@@ -36,7 +36,7 @@ def function(ingame_text_queue, transcription) do
   end
 end
 
-defp num_words([_|_] = list), do:
+defp num_words(list) when is_list(list), do:
   list |> List.flatten() |> Enum.join("\n") |> num_words()
 defp num_words(text), do:
   text |> String.split(~r/[^\w\']+/) |> Enum.count

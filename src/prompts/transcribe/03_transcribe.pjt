@@ -1,15 +1,18 @@
 As a reminder, these are the characters, places and concept names:
 {{ json.story_names }}
 
+In the dialogue if you see something that is likely a mistake in the speech recognition, as it is likely a word in the above list, please update it here as you are transcribing.
+
 To classify each line add a "PREFIX: " to the start of each line, as one of these:
 - OUTGAME/{PERSON NAME} - something asking questions about how D&D works, or not even related
 - GAMEMECH/{PERSON NAME} - something with D&D game mechanics discussion like rolling dice, discussing how many hits points a guy has, or what kind of modifier or weapons someone has
-- NARRATIVE/{PERSON NAME} - Something in the game describing what a character looks, like what they are doing (but not what they are saying)
+- NARRATIVE/{PERSON NAME} - Something in the game describing what a character looks, like what they are doing (but not what they are saying) If it is a character saying this, it is probably not NARRATIVE but rather DIALOGUE
 - DIALOGUE/{PERSON NAME} - what a game character is actually saying in character.  
-- BACKGROUND/{PERSON NAME} - discussing the background of a character, his alignment, or explaining something about the current world setting that the characters or DM should know
+- BACKGROUND/{PERSON NAME} - discussing the background of a character, his alignment, or explaining something about the current world setting that the characters or DM should know.
 
 If you can't guess at the name, just use UNKNOWN as the person name.  Guesses are OK though.
 
+This is the transcription.  Please don't modify ANYTHING in the structure except the prefixing and name fixing I've mentioned above.  Please no writing your own content.  This is a tagging exercise (and spelling correction), not creative writing.
 ===========================
-
 {{ input }}
+===========================
