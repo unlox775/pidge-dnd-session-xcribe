@@ -8,7 +8,9 @@ This is what the AI came up with for this next part of the story:
 
 As a reminder, these are the characters, places and concept names:
 
-{{ story_names }}
+{{ json.story_names }}
+
+Use this as a reference and as background to what you write, but this is all information covered previous, so minimize any over-repeating of facts from this JSON object, like re-stating that a character is a certain class, or has a certain item.  It is already understood from earlier parts.
 
 {% if human_input != "-" %}
 

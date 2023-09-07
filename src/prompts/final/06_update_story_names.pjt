@@ -4,7 +4,9 @@ Okay, that was great! If you could please now update my JSON object with all of 
 
 Now, based off of the last section of the story we just did and my feedback, can you please add things or update things in this JSON to reflect the current state of a useful set of the names and spellings that we want to keep consistent going forward. Please output the new JSON.
 
-Also make sure to keep the length of the values within a certain length, in the JSON.  Try for 20 words of text per name.  For character/NPC names sure to keep detail on their gender, class, and where they currently are in the scene.
+Also make sure to keep the length of the values within a certain length, in the JSON.  Try for 20 words of text per name.  For character/NPC names sure to keep detail on their gender, class, and where they currently are in the scene.  However, don't edit a name's value unless something in this section of the story has changed it.  If you are unsure, leave it alone, as we might lose information over time.
+
+Make one of the keys special, up to 50 words, called "current_scene", describing basically where everyone is, how far to the nearest things in the scene, etc.
 
 {% if human_input != "-" %}
 

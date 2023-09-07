@@ -15,6 +15,6 @@ If you can't guess at the name, just use UNKNOWN as the person name.  Guesses ar
 This is the transcription.  Please don't modify ANYTHING in the structure except the prefixing and name fixing I've mentioned above.  Please no writing your own content.  This is a tagging exercise (and spelling correction), not creative writing.
 
 Only transcribe the content below this line:
-===========================
+---
 {{ input }}
-===========================
+---
